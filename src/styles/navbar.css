@@ -1,10 +1,20 @@
-.container {
+.nav-container {
+  padding-left: 35px;
+  padding-right: 35px;
+  height: 80px;
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
+  background-color: #242424;
 }
 
-.right {
+.nav-txt {
+  color: white;
+  font-family: "Source Code Pro", monospace;
+}
+
+.right-set {
   display: flex;
-  flex-direction: row;
+  width: 400px;
+  justify-content: space-between;
 }
