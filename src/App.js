@@ -6,8 +6,12 @@ import MyLearning from "./components/pages/MyLearning";
 import ContactMe from "./components/pages/ContactMe";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "../src/styles/app.css";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
+  library.add(fab, faDownload);
   return (
     <Router>
       <Fragment>

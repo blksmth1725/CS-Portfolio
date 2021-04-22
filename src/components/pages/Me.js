@@ -1,11 +1,19 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import "../../styles/components/Me.css";
 
 function Me(props) {
   return (
     <div className="page-container">
       <div className="title-container">
-        <h1 className="title">Chris.me()</h1>
+        <h1 className="title">.me()</h1>
+      </div>
+      <div className="download-link">
+        <button>
+          <FontAwesomeIcon icon="download" className="font-awesome-icon" />
+          <a href="../../../public/resume.pdf" title="CS_CV" download>
+            Resume
+          </a>
+        </button>
       </div>
     </div>
   );

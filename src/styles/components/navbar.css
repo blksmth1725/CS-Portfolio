@@ -3,6 +3,7 @@
   padding-right: 35px;
   height: 80px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   background-color: #242424;
@@ -13,8 +14,23 @@
   font-family: "Source Code Pro", monospace;
 }
 
+.middle-set {
+  width: 450px;
+  display: flex;
+  justify-content: flex-start;
+}
+
 .right-set {
   display: flex;
-  width: 400px;
   justify-content: space-between;
+}
+
+.text-right {
+  padding-right: 30px;
+}
+
+.font-awesome-brand-icon {
+  color: white;
+  font-size: 1.5em;
+  padding-right: 40px;
 }
