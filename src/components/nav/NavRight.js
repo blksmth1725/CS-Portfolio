@@ -1,21 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import db from "../../staticData/db";
+import "../../styles/components/navbar.css";
 
 export default function NavRight() {
+  const data = db.christianSheen.pages;
+
   return (
     <div className="right-set">
-      <Link to="/me" className="text-right">
-        <p className="nav-txt">.me()</p>
-      </Link>
-      <Link to="/portfolio" className="text-right">
-        <p className="nav-txt">.portfolio()</p>
-      </Link>
-      <Link to="/myLearning" className="text-right">
-        <p className="nav-txt">.myLearning()</p>
-      </Link>
-      <Link to="/contactMe" className="text-right">
-        <p className="nav-txt">.contactMe()</p>
-      </Link>
+      {data.map((page) => {
+        return (
+          <Link to={page.link.to} className={page.link.classname}>
+            <h4 className={page.classname}>{page.title}</h4>
+          </Link>
+        );
+      })}
     </div>
   );
 }
