@@ -10,7 +10,7 @@ export default function NavRight() {
     <div className="right-set">
       {data.map((page) => {
         return (
-          <Link to={page.link.to} className={page.link.classname}>
+          <Link to={page.nav.to} className={page.nav.classname}>
             <h4 className={page.classname}>{page.title}</h4>
           </Link>
         );

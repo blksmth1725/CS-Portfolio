@@ -1,14 +1,16 @@
 import React, { Fragment } from "react";
-import Navbar from "./components/nav/Navbar";
-import Me from "./components/pages/Me";
-import Portfolio from "./components/pages/Portfolio";
-import MyLearning from "./components/pages/MyLearning";
-import ContactMe from "./components/pages/ContactMe";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "../src/styles/app.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
+
+import Navbar from "./components/nav/Navbar";
+import Page from "./components/pages/Page";
+import Me from "./components/pages/Me";
+import Portfolio from "./components/pages/Portfolio";
+import MyLearning from "./components/pages/MyLearning";
+import ContactMe from "./components/pages/ContactMe";
 
 function App() {
   library.add(fab, faDownload);
@@ -25,6 +27,7 @@ function App() {
             <Route exact path="/contactMe" component={ContactMe} />
           </Switch>
         </section>
+        <Page />
       </Fragment>
     </Router>
   );
