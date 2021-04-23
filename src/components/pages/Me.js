@@ -10,7 +10,7 @@ function Me(props) {
       <div className="download-link">
         <button>
           <FontAwesomeIcon icon="download" className="font-awesome-icon" />
-          <a href="../../../public/resume.pdf" title="CS_CV" download>
+          <a href="../../staticData/pdf" title="CS_CV" download>
             Resume
           </a>
         </button>

@@ -34,14 +34,10 @@ module.exports = {
           technologies: [
             {
               title: "JavaScript",
-              image: "",
+              image: "/images/JavascriptImage.png",
             },
             {
-              title: "HTML",
-              image: "",
-            },
-            {
-              title: "CSS",
+              title: "HTML & CSS",
               image: "",
             },
             {
