@@ -31,10 +31,12 @@ module.exports = {
         title: ".myLearning()",
         classname: "nav-txt",
         content: {
+          text:
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, magnam, mollitia repudiandae odit dolore maxime molestiae nemo omnis assumenda nisi enim! Laborum facere earum eligendi.",
           technologies: [
             {
               title: "JavaScript",
-              image: "/images/JavascriptImage.png",
+              image: "",
             },
             {
               title: "HTML & CSS",

@@ -1,0 +1,12 @@
+.page-container {
+  display: grid;
+}
+
+.card-info {
+  display: flex;
+}
+
+.tech-title {
+  color: white;
+  font-family: "Source Code Pro", monospace;
+}
