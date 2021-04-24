@@ -10,6 +10,7 @@ import Me from "./components/pages/Me";
 import Portfolio from "./components/pages/Portfolio";
 import MyLearning from "./components/pages/MyLearning";
 import ContactMe from "./components/pages/ContactMe";
+import Landing from "./components/pages/Landing";
 
 function App() {
   library.add(fab, faDownload);
@@ -17,9 +18,10 @@ function App() {
     <Router>
       <Fragment>
         <Navbar />
-        <Route exact path="/" component={Body} />
+        <Route exact path="/" component={Landing} />
         <section className="container">
           <Switch>
+            <Route exact path="/landing" component={Landing} />
             <Route exact path="/me" component={Me} />
             <Route exact path="/portfolio" component={Portfolio} />
             <Route exact path="/myLearning" component={MyLearning} />
