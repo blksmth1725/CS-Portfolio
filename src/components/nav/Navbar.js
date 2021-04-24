@@ -1,6 +1,4 @@
 import React from "react";
-import "../../styles/components/navbar.css";
-import "../../styles/app.css";
 
 import NavLeft from "./NavLeft";
 import NavMiddle from "./NavMiddle";

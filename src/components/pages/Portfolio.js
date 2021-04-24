@@ -1,13 +1,9 @@
 import React from "react";
 
-function Portfolio(props) {
+export default function Portfolio() {
   return (
-    <div className="page-container">
-      <div className="title-container">
-        <h1 className="title">.portfolio()</h1>
-      </div>
+    <div>
+      <h4 className="portfolio">.portfolio()</h4>
     </div>
   );
 }
-
-export default Portfolio;

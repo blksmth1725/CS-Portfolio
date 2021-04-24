@@ -1,13 +1,9 @@
 import React from "react";
 
-function ContactMe(props) {
+export default function ContactMe() {
   return (
-    <div className="page-container">
-      <div className="title-container">
-        <h1 className="title">.contactMe()</h1>
-      </div>
+    <div>
+      <h4 className="contactMe">.contactMe()</h4>
     </div>
   );
 }
-
-export default ContactMe;
