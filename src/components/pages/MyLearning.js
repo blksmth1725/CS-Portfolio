@@ -31,5 +31,6 @@ function MyLearning(props) {
     </div>
   );
 }
+console.log("for commit");
 
 export default MyLearning;
