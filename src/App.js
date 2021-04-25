@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "../src/styles/app.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -11,9 +11,14 @@ import Me from "./components/pages/Me";
 import Portfolio from "./components/pages/Portfolio";
 import MyLearning from "./components/pages/MyLearning";
 import ContactMe from "./components/pages/ContactMe";
+const ROUTES = [
+  { path: "/me", component: Me },
+  { path: "/portfolio", component: Portfolio },
+  { path: "/myLearning", component: MyLearning },
+  { path: "/contactMe", component: ContactMe },
+];
 
 function App() {
-  library.add(fab, faDownload);
   return (
     <Router>
       <Fragment>
@@ -27,7 +32,6 @@ function App() {
             <Route exact path="/contactMe" component={ContactMe} />
           </Switch>
         </section>
-        <Body />
       </Fragment>
     </Router>
   );
