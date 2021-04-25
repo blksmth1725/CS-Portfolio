@@ -1,6 +1,5 @@
 import React from "react";
-import db from "../../staticData/db";
-import "../../styles/components/page.css";
+import db from "../staticData/db";
 
 function MyLearning(props) {
   const data = db.christianSheen.pages;
@@ -10,6 +9,9 @@ function MyLearning(props) {
       <div className="title-container">
         <h1 className="title">.myLearning()</h1>
       </div>
+      {/* <div className="title-container">
+      <h1 className="title">.myLearning()</h1>
+    </div>
       <div className="text">
         {data.map((page) => (page.content.text ? page.content.text : ""))}
       </div>
@@ -27,7 +29,7 @@ function MyLearning(props) {
         })}
       </div>
       <div className="books"></div>
-      <div className="academia"></div>
+      <div className="academia"></div> */}
     </div>
   );
 }

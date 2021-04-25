@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import db from "../../staticData/db";
-import "../../styles/components/navbar.css";
 
-export default function NavRight() {
+export default function NavRight(onSelectTab) {
   const data = db.christianSheen.pages;
 
   return (
